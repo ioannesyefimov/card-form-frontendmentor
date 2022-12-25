@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="cards">
+        <div class="back-card card">
+          <p id="card-cvc">000</p>
+        </div>
+        <div class="front-card card">
+          <img class="card-logo" src="images/card-logo.svg" alt="">
+          <h2 id="card-numbers">0000 0000 0000 0000</h2>
+          <div class="flex-group">
+      
+            <p id="card-credentials">Jane Appleseed</p>
+            <div class="card-date">
+              <p id="card-datemm">00</p>
+              <p id="card-dateyy">00</p>
+            </div>
+          </div>
+        </div>
+      
+      
+      </div>
+      <div class="card-input" id="card__input">
+       <form action="" id="form" method="get">
+         
+        <div id="cardholder__input" class="cardholder">
+          
+          <label for="card-name">Cardholder name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" class="" id="name-input"> </input>
+          <div class="error hidden" id="error-name" ><img src="images/error.svg" alt=""><span id="error ">Can't be blank</span></div>
+        </div>
+         <div id="cardnumber__input" class="cardnumber">
+           <label for="card-number">card number</label>
+           <input type="text" min='16' max="16" placeholder="e.g. 1234 5678 9123 0000" id="cardnumber-input">
+           <div id="error-card" class="error hidden"><img src="images/error.svg" alt=""><span id="error">Wrong format, numbers only</span></div>
+         </div>
+         <!-- <div class="flex-group">
+           <p>Exp. Date (MM/YY)</p>
+           <p class="flex-group2">Cvc</p>
+         </div> -->
+         <div class="flex-group-date">
+           <label for="card-expdate" class="date">Exp. Date (MM/YY)</label>
+           <input type="text" id="date-mm" placeholder="MM" ></input>
+           <input type="text" placeholder="YY"  id="date-yy">
+           <label  for="card-cvc" class="flex-group2">Cvc</label>
+           <input type="text" placeholder="e.g. 123" max="12"  id="date-cvc">
+         
+          <div id='carddate__input' class="flex-errors, hidden ">
+            <div id="error-date1" class="hiddenvisible"><img src="images/error.svg" alt=""><span id="error">Can't be blank</span></div>
+            <div id="error-date2" class="hiddenvisible"><img src="images/error.svg" alt=""><span id="error">Can't be blank</span></div>
+          </div>
+
+         </div>
+         <button type="submit" id="btn" class="btn">Confirm</button>
+       </form>
+      </div>
+      <div class="submitted-input hidden" id="completed-state">
+        <img src="images/icon-complete.svg" alt="">
+        <h1 class="thx">Thank you!</h1>
+        <p >We've added your card details</p>
+        <button id="btn__continue" class="btn">Continue</button>
+      </div>
+    </section>
+    
+  </main>
+
+  
+ 
+
+  
+
+  <!-- Completed state start -->
+
+  
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
