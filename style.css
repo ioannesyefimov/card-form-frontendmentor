@@ -123,7 +123,7 @@ label {
     margin-bottom: 2rem;
 }
 .back-card {
-    background-image: url(images/bg-card-back.png);
+    background-image: url(bg-card-back.png);
     background-repeat: no-repeat;
     background-size: 100% 9.5em
    ;
@@ -137,7 +137,7 @@ label {
  
 }
 .front-card {
-    background-image: url(images/bg-card-front.png);
+    background-image: url(bg-card-front.png);
     background-size: 100%;
     padding: 1em   ;
     color: var(--clr-neutral-white);
@@ -342,7 +342,7 @@ form{
     
  }
  body{
-  background-image: url(images/bg-main-desktop.png);
+  background-image: url(bg-main-desktop.png);
     background-size: 33% 100%;
     background-repeat: no-repeat;
  }
